@@ -1,20 +1,19 @@
 # caso_final_integrador_tema4
 
 [Link del repositorio de Github](https://github.com/flavi13/caso_final_integrador_tema4) 
-NO TERMINADO
 
-Enunciado del Proyecto
+## Enunciado del Proyecto
 Para este proyecto, se te pide que implementes un intérprete "tiny-lisp" basado en la clase Variant y las capacidades de la Standard Template Library (STL) de C++. Deberás trabajar en CLion para este proyecto.
 
-Requisitos del proyecto:
+### Requisitos del proyecto:
 
-Definir e implementar una clase Variant. Esta clase deberá ser capaz de representar diferentes tipos de datos, incluyendo símbolos, números, listas y procedimientos.
-Implementar un método to_string() para la clase Variant que convierta una instancia de la clase a una cadena de texto.
-Implementar un método to_json_string() para la clase Variant que convierta una instancia de la clase a una representación en formato JSON.
-Implementar un método estático from_json_string() que tome una cadena en formato JSON y la convierta a una instancia de la clase Variant.
-Implementar un método parse_json() que tome una cadena en formato JSON y la convierta a una instancia de la clase Variant.
+- Definir e implementar una clase Variant. Esta clase deberá ser capaz de representar diferentes tipos de datos, incluyendo símbolos, números, listas y procedimientos.
+- Implementar un método to_string() para la clase Variant que convierta una instancia de la clase a una cadena de texto.
+- Implementar un método to_json_string() para la clase Variant que convierta una instancia de la clase a una representación en formato JSON.
+- Implementar un método estático from_json_string() que tome una cadena en formato JSON y la convierta a una instancia de la clase Variant.
+- Implementar un método parse_json() que tome una cadena en formato JSON y la convierta a una instancia de la clase Variant.
 
-Rúbrica
+### Rúbrica
 (30%) Implementación de la clase Variant:
 
 Se implementó la clase Variant correctamente, y se incluyeron todos los tipos de datos requeridos.
@@ -31,15 +30,17 @@ El método estático from_json_string() está implementado correctamente y puede
 
 El método parse_json() está implementado correctamente y puede tomar una cadena en formato JSON y convertirla en una instancia de la clase Variant.
 
-Entrega
-Todo el código debe estar bien comentado y organizado.
-Se debe incluir un archivo README con instrucciones sobre cómo compilar y ejecutar tu programa.
-El proyecto debe compilarse sin errores ni advertencias en CLion.
-Propuesta de Solución
+### Entrega
+- Todo el código debe estar bien comentado y organizado.
+- Se debe incluir un archivo README con instrucciones sobre cómo compilar y ejecutar tu programa.
+- El proyecto debe compilarse sin errores ni advertencias en CLion.
+
+### Propuesta de Solución
 Aquí está el código de tu clase Variant completo con los métodos to_string(), to_json_string(), from_json_string() y parse_json() que has proporcionado.
 
 Antes de pegar el código en CLion, necesitas tener la librería json11 y la supuesta jsonlib instalada en tu sistema.
 
+````c++
 #include <vector>
 #include <string>
 #include <map>
@@ -87,4 +88,5 @@ Variant Variant::from_json_string(std::string sjson) {
 Variant Variant::parse_json(jsonlib::Json job) {
 // Tu implementación aquí
 }
+````
 Este código aún no es funcional porque no has proporcionado la definición del tipo Entorno ni el código para jsonlib::Json. Asegúrate de incluir estas definiciones en tu proyecto antes de tratar de compilar.
